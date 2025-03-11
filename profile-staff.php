@@ -42,7 +42,7 @@ $username = $info['username'] ?? 'None';
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0 toggled" style="background: var(--bs-primary-text-emphasis);">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.php">
-                    <div class="sidebar-brand-icon rotate-n-15"><img class="rounded-circle" src="assets/img/washing-clothes.gif" width="60" height="60"></div>
+                    <div class="sidebar-brand-icon rotate-n-15"><img class="rounded-circle" src="assets/img/wash.gif" width="60" height="60"></div>
                     <div class="sidebar-brand-text mx-3"><span>Laundry<br>Mangement<br>System</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
@@ -145,7 +145,7 @@ $username = $info['username'] ?? 'None';
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © ZDSPGC&nbsp;2023</span></div>
+                    <div class="text-center my-auto copyright"><span>Copyright © Dorine&nbsp;2025</span></div>
                 </div>
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>

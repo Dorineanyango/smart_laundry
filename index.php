@@ -10,8 +10,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dashboard - Laundry Management System with QRCode</title>
-    <link rel="shortcut icon" href="assets/img/washing-clothes.gif" type="image/gif">
+    <title>Dashboard - Smart Laundry Management System with QRCode</title>
+    <link rel="shortcut icon" href="assets/img/wash.gif" type="image/gif">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -23,7 +23,7 @@
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0 toggled" style="background: var(--bs-primary-text-emphasis);">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.php">
-                    <div class="sidebar-brand-icon rotate-n-15"><img class="rounded-circle" src="assets/img/washing-clothes.gif" width="60" height="60"></div>
+                    <div class="sidebar-brand-icon rotate-n-15"><img class="rounded-circle" src="assets/img/wash.gif" width="60" height="60"></div>
                     <div class="sidebar-brand-text mx-3"><span>Laundry<br>Mangement<br>System</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
@@ -65,7 +65,7 @@
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
                                             <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span>Earnings (monthly) - <?php echo date('F')?> </span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>₱<?php get_monthly()?></span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>Ksh <?php get_monthly()?></span></div>
                                         </div>
                                         <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
                                     </div>
@@ -78,7 +78,7 @@
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
                                             <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>Earnings (annual) - <?php echo date('Y')?> </span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>₱<?php get_yearly()?></span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>Ksh <?php get_yearly()?></span></div>
                                         </div>
                                         <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
                                     </div>
@@ -266,7 +266,7 @@
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © ZDSPGC&nbsp;2023</span></div>
+                    <div class="text-center my-auto copyright"><span>Copyright © Dorine&nbsp;2025</span></div>
                 </div>
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>

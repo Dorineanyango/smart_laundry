@@ -21,8 +21,8 @@ foreach ($results as $row) {
 ?>
     <tr>
         <td><i class="fas fa-shopping-basket text-gray-600"></i>  <?php echo $row['kilo'].' '.$row['unit']; ?></td>
-        <td><?php echo $row['type']; ?>  ₱<?php echo number_format($row['price'] * $row['kilo'], 2)?></td>
-        <td>₱<?php echo number_format($row['price'], 2)?></td>
+        <td><?php echo $row['type']; ?>  Ksh <?php echo number_format($row['price'] * $row['kilo'], 2)?></td>
+        <td>Ksh <?php echo number_format($row['price'], 2)?></td>
         <td class="text-center">
         <a class="mx-1" href="#" data-bs-target="#laundry-remove" data-bs-toggle="modal" data-id="<?php echo $row['id']?>" ><i class="far fa-trash-alt text-danger" style="font-size: 20px;"></i></a>
         </td>  

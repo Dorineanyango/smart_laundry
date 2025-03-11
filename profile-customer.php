@@ -33,7 +33,7 @@ $customer_fullname = $info['fullname'];
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Profile - Laundry Management System with QRCode</title>
-    <link rel="shortcut icon" href="assets/img/washing-clothes.gif" type="image/gif">
+    <link rel="shortcut icon" href="assets/img/wash.gif" type="image/gif">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -45,7 +45,7 @@ $customer_fullname = $info['fullname'];
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0 toggled" style="background: var(--bs-primary-text-emphasis);">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.php">
-                    <div class="sidebar-brand-icon rotate-n-15"><img class="rounded-circle" src="assets/img/washing-clothes.gif" width="60" height="60"></div>
+                    <div class="sidebar-brand-icon rotate-n-15"><img class="rounded-circle" src="assets/img/wash.gif" width="60" height="60"></div>
                     <div class="sidebar-brand-text mx-3"><span>Laundry<br>Mangement<br>System</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
@@ -101,7 +101,7 @@ $customer_fullname = $info['fullname'];
                                             echo '<td><a class="mx-1 text-decoration-none" target="_blank" href="receipt?id='.$row['id'].'&type=view"><i class="fas fa-print" style="font-size: 20px;"></i> '.$row['id'].'</a></td>';
                                             echo '<td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/profile.png">' . $row['fullname'] . '</td>';
                                             echo '<td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/profile.png">' . $row['username'] . '</td>';
-                                            echo '<td>₱' . number_format($row['total'], 2) . '</td>';
+                                            echo '<td>Ksh ' . number_format($row['total'], 2) . '</td>';
                                             echo '<td>' . $row['created_at'] . '</td>';
                                             echo '</tr>';
                                         }
@@ -118,7 +118,7 @@ $customer_fullname = $info['fullname'];
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © ZDSPGC&nbsp;2023</span></div>
+                    <div class="text-center my-auto copyright"><span>Copyright © Dorine&nbsp;2025</span></div>
                 </div>
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>

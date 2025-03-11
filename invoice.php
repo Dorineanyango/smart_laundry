@@ -23,8 +23,8 @@ function getLaundryReceipt(){
         <tr class="font-monospace">
                     <td class="font-monospace text-start mt-0 mb-0" style="font-size: 10px;"><?= $row['name']?></td>
                     <th class="font-monospace text-center mt-0 mb-0" style="font-size: 10px;"><?= $row['kilo'].' '.$row['unit']?></th>
-                    <th class="font-monospace text-center mt-0 mb-0" style="font-size: 10px;">₱<?= number_format($row['price'], 2)?></th>
-                    <td class="font-monospace text-end mt-0 mb-0" style="font-size: 10px;">₱<?= number_format($row['price'] * $row['kilo'], 2)?></td>
+                    <th class="font-monospace text-center mt-0 mb-0" style="font-size: 10px;">Ksh <?= number_format($row['price'], 2)?></th>
+                    <td class="font-monospace text-end mt-0 mb-0" style="font-size: 10px;">Ksh <?= number_format($row['price'] * $row['kilo'], 2)?></td>
                 </tr>
         <?php
     }
@@ -80,9 +80,9 @@ foreach($result as $row){
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>LMS</title>
-    <link rel="shortcut icon" href="assets/img/washing-clothes.gif" type="image/gif">
-    <meta name="description" content="LMS - Laundry Management System">
+    <title>Smart-LMS</title>
+    <link rel="shortcut icon" href="assets/img/wash.gif" type="image/gif">
+    <meta name="description" content="Smart - Laundry Management System">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
@@ -97,9 +97,9 @@ foreach($result as $row){
             <thead>
                 <tr>
                     <th class="font-monospace text-center" style="color: var(--bs-gray-900);font-size: 13px;">
-                    <img src="assets/img/washing-clothes.gif" width="40">&nbsp;Laundry Management System<br>
-                    <span style="font-weight: normal !important;">Street Unknown, Pagadian City</span><br>
-                    <span style="font-weight: normal !important;">Phone (+63) 000-000-000</span><br>
+                    <img src="assets/img/wash.gif" width="40">&nbsp;Smart-Laundry Management System<br>
+                    <span style="font-weight: normal !important;">Kasarani, Nairobi City</span><br>
+                    <span style="font-weight: normal !important;">Phone (+254) 714-687-981</span><br>
                     <span style="font-weight: normal !important;">Date: <?php echo date('Y-m-d')?></span><br>
                     <canvas class="mt-1 mb-2 text-center" id="qr-code"></canvas>
                     </th>
@@ -196,13 +196,13 @@ foreach($result as $row){
         <table class="table">
             <thead class="font-monospace">
                 <tr class="font-monospace">
-                    <th class="font-monospace text-end"><strong>TOTAL</strong>&nbsp;<strong>₱<?php echo number_format($total, 2); ?></strong></th>
+                    <th class="font-monospace text-end"><strong>TOTAL</strong>&nbsp;<strong>Ksh <?php echo number_format($total, 2); ?></strong></th>
                 </tr>
                 <tr class="font-monospace">
-                    <th class="font-monospace text-end"><strong>AMOUNT</strong>&nbsp;<strong>₱<?php echo number_format($amount, 2); ?></strong></th>
+                    <th class="font-monospace text-end"><strong>AMOUNT</strong>&nbsp;<strong>Ksh <?php echo number_format($amount, 2); ?></strong></th>
                 </tr>
                 <tr class="font-monospace">
-                    <th class="font-monospace text-end"><strong>CHANGES</strong>&nbsp;<strong>₱<?php echo number_format($amount - $total, 2); ?></strong></th>
+                    <th class="font-monospace text-end"><strong>CHANGES</strong>&nbsp;<strong>Ksh <?php echo number_format($amount - $total, 2); ?></strong></th>
                 </tr>
             </thead>
             <tbody>
